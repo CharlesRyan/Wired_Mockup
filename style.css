@@ -1,0 +1,431 @@
+html {
+    background-color: #f6f6f6;
+}
+body {
+    width: 100%;
+    background-color: #F6f6F6;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+}
+.titleFont {
+    font-family: ff-oxide-solid-web,OxideSolidOT,oxidesolidot-webfont,HelveticaNeue-Bold,'Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-size: .75em;
+    font-weight: 700;
+}
+.bodyFont {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+}
+#bus:hover {
+    background-color: #4c8942;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#cul:hover {
+    background-color: #47096b;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#des:hover {
+    background-color: #52adc9;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#gea:hover {
+    background-color: #346d7f;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sci:hover {
+    background-color: #dbac46;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sec:hover {
+    background-color: #632427;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#tra:hover {
+    background-color: #af5055;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*small screen sizes hide nav links */
+@media (max-width: 770px) {
+  #navCollapse {
+      display: none;
+    }
+}
+
+#headBar {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #A9A9A9;
+}
+#mired {
+    margin: 10px 0px 10px 58px;
+}
+.mainLogo:hover {
+  opacity: .5;
+}
+.miredSize {
+    width: 70%;
+    height: auto;
+}
+.miredShrink {
+    width: 60%;
+    height: auto;
+}
+#logoBox {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 200px;
+    padding: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
+}
+#logoBox a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#navvey {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#navBarTog {
+    margin: 20px 0px 0px 30px;
+    opacity: .6;
+}
+.navItem {
+    font-family: ff-oxide-solid-web,OxideSolidOT,oxidesolidot-webfont,HelveticaNeue-Bold,'Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-weight: 550;
+    font-size: .9em;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.6em 0em 0.6em 0em;
+    border-bottom: 1px solid #A9A9A9;
+    border-left: 1px solid #A9A9A9;
+    color: inherit;
+    width: 15%;
+}
+#tra {
+  border-right: 1px solid #A9A9A9;
+}
+.navItem p {
+    margin: 0px;
+    font-weight: 300;
+}
+#navCollapse {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#navLinks {
+    padding: 0px;
+    margin: 0px;
+}
+#edit {
+    border: none;
+    display: inline-block;
+    padding: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
+    color: inherit;
+    font-family: ff-oxide-solid-web,OxideSolidOT,oxidesolidot-webfont,HelveticaNeue-Bold,'Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-weight: 550;
+    font-size: .7em;
+    letter-spacing: 1px;
+}
+#logSearch {
+    width: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+}
+#logSearch img {
+  height: 15px;
+  width: 15px;
+}
+#contentWrapper {
+  background-color: inherit;
+    margin: 180px 0px 0px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+}
+.contentBox {
+    height: 360px;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    border-top: 3px solid black;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.contentBox:hover {
+-webkit-transform: translateY(-5px);
+transform: translateY(-5px);
+box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.contentBox p {
+    margin: 10px 0px;
+}
+.backpage {
+    height: 320px;
+    width: 166px;
+}
+.backpage img {
+    width: 90%;
+    height: 40%;
+}
+.headline {
+  width: 385px;
+}
+.headline .previewText {
+    width: 85%;
+}
+.headline .previewTitle {
+    font-size: 1.3em;
+}
+.headline  img {
+    width: 85%;
+    height: 13em;
+}
+.skinny {
+  width: 136px;
+}
+.backpage .previewText {
+    width: 90%;
+}
+.hst img {
+    width: 120px;
+    height: 120px;
+}
+.uni img {
+  width: 120px;
+  height: 90px;
+}
+.previewTitle {
+  width: 80%;
+}
+#createContent {
+    margin: 30px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.lineBreak {
+    font-family: 'Play', sans-serif;
+    width: 100%;
+}
+.contentInfo {
+    margin: 0px 20px 20px 20px;
+}
+#aCat {
+    margin: 0px 0px 10px 5px;
+}
+#aContent {
+    height: 10em;
+    width: 100%;
+    box-sizing: border-box;
+}
+.tnAuthorCat {
+  font-family: ff-oxide-solid-web,OxideSolidOT,oxidesolidot-webfont,HelveticaNeue-Bold,'Helvetica Neue Bold','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-size: .7em;
+}
+.tnTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: .8em;
+    font-weight: 700;
+}
+#mostPopular {
+  height: 77.65em;
+  width: 33%;
+  min-width: 258px;
+    background-color: white;
+    margin: 5px 15px 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    border-top: 6px solid black;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#mostPopular h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  height: 2em;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.popLine {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.popular {
+  display: inline-flex;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 9em;
+  margin: 20px 0px;
+}
+.popular img {
+  width: auto;
+  float: left;
+  height: 80%;
+  margin: 4px 0px 0px 0px;
+}
+.popText {
+  height: 90%;
+  margin: 0px 0px 0px 5px;
+}
+.ArticleList {
+  background-color: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.ThumbnailList {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 15px 15px 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.backButton {
+    color: blue;
+}
+.backButton:hover {
+    cursor: pointer;
+}
+.App {
+  background-color: inherit;
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1220px) {
+  .App {
+    flex-wrap: wrap;
+  }
+  .ArticleList{
+    width: 100%;
+  }
+}
+span {
+  margin: 0px 5px;
+}
+#bottomBar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  margin-top: 30px;
+}
+#bottomBar ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 15px 0px 0px;
+}
+#bottomBar li {
+  margin: 10px;
+}
+#footerMired {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 38px;
+}
+#terms {
+  width: 70%;
+  font-weight: lighter;
+}
+.article {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.imgBox{
+  width: 100%;
+  margin: 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.articleWords {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.articleWords p {
+  width: 80%;
+}
+.musky img{
+  margin: -110px 0px;
+}
+.loathing img{
+  margin: -50px 0px;
+}
+.arty img {
+  margin-bottom: 30px;
+}
+.gadget img{
+  margin: -100px 0px;
+}
+.clowning img {
+  margin: -100px 0px;
+}
+.secure img{
+  margin: -80px 0px;
+}
+.ipsum img {
+  margin: -90px 0px;
+}
