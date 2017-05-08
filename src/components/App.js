@@ -5,7 +5,6 @@ import ThumbnailList from "./ThumbnailList";
 import Article from "./Article";
 import data from "../../Articles.json";
 import * as api from "../api";
-import { HashRouter, Route, Link, Switch } from 'react-router-dom';
 
 var listArticles, popArticles;
 

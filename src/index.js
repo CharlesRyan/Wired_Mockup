@@ -1,11 +1,7 @@
-// httpster -p 8080 -d /public
-
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import data from "../Articles.json";
-// import { Router, Route, hashHistory } from "react-router";
-import { HashRouter, Route, Link } from 'react-router-dom';
 
 var activeCat;
 var business = document.getElementById('bus');
